@@ -15,9 +15,9 @@ The model is deployed on Microsoft Azure cloud service. First we have created cr
 
 
 ### Tools & Libraries used
-All Libraries mentioned in requirements.txt
-LLM - OpenAI()
-Frontend & Backend - Python & Chainlit
-IDE - Visual Studio Code
-Containerization - Docker
-Cloud service - Microsoft Azure
+1. All Libraries mentioned in requirements.txt
+2. LLM - OpenAI()
+3. Frontend & Backend - Python & Chainlit
+4. IDE - Visual Studio Code
+5. Containerization - Docker
+6. Cloud service - Microsoft Azure
