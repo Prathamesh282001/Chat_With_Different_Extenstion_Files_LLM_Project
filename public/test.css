@@ -1,0 +1,12 @@
+.watermark {
+    display: none !important;
+  }
+
+img {
+  display: none;
+}
+
+#ask-upload-button {
+    color: black;
+    font-weight: 600;
+}
