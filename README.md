@@ -21,3 +21,6 @@ The model is deployed on Microsoft Azure cloud service. First we have created cr
 4. IDE - Visual Studio Code
 5. Containerization - Docker
 6. Cloud service - Microsoft Azure
+
+#### Google drive link for demo video
+https://drive.google.com/file/d/1XsrTr9qvdGDJ5t01I0dxEsOAH0vk0adx/view?usp=share_link
