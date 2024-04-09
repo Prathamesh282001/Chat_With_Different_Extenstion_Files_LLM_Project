@@ -1,26 +1,47 @@
-## ProtonDatalabs AI developer Assignment
+# ProtonDatalabs AI Developer Assignment Documentation
 
-### Assignment Description
-Build a chatbot application which takes a file (.txt, .pdf, .docx) as an input and answers user's query.
+## Project Overview
 
-### Assignment Goal
-Accurately provide answers based on the uploaded file's text data.
+The ProtonDatalabs AI Developer Assignment involves building a chatbot application capable of answering user queries based on uploaded files in formats such as .txt, .pdf, and .docx. The primary objective is to provide accurate answers derived from the textual data within the uploaded files.
 
-### Approach
-We are using OpenAI large language model to answer users query based on uploaded file because of its ability to answer accurately and it is fast. For chatbot's user interface we are using python's chainlit library because of its multiple in-built features, which gives a user experience like chatgpt. 
-We are using prompt template to tailor the model's behavior to specific domains or tasks. In this task we are prompting llm to generate an answer to a user's query based on the given context (text present in uploaded file). At the start of the chatbot model, it asks users to upload files. We are suing Chainlit's AskFileMessage feature to take files from users. We are storing this file in a user session because storing it locally or in a database causes performance hindrances of chatbot. 
-After taking an uploaded file, we extract the text present in the file. This text is then sent to the text splitter instance, which is creating data chunks. These data chunks are then embedded (mathematical representation of words in higher dimensions which can be understood by llm or computer) using HuggingFaceEmbedding model because this model can handle large amount of tokens, and it is a bit fast compared to other free models. The generated embeddings are then stored in ChromaDb vector database (offers simplicity and it is open-source) to do similarity search and retrive answer relevant to user's query. 
-When a user asks a question, the model  generates an answer and sends it back to the user.
-The model is deployed on Microsoft Azure cloud service. First we have created created image (containerization) of our app using docker. This image is stored in azure container registry. And hosted the chatbot using azure web app service.
+## Project Goal
 
+The goal is to develop a chatbot application that can effectively respond to user queries by leveraging an OpenAI large language model. This model's capability to deliver accurate and rapid responses makes it an ideal choice for the task. The user interface of the chatbot application is designed to mimic a conversation, offering a seamless and intuitive experience for users.
 
-### Tools & Libraries used
-1. All Libraries mentioned in requirements.txt
-2. LLM - OpenAI()
-3. Frontend & Backend - Python & Chainlit
-4. IDE - Visual Studio Code
-5. Containerization - Docker
-6. Cloud service - Microsoft Azure
+## Approach
 
+### Model Selection:
+The chosen approach involves utilizing the OpenAI large language model (LLM) for generating responses based on the context provided by the uploaded file. This model offers exceptional accuracy and efficiency in processing natural language queries.
+
+### Implementation Framework:
+To create the chatbot interface, the project utilizes the Chainlit library in Python. Chainlit offers a range of built-in features that facilitate the development of conversational interfaces. 
+
+### Prompt Template:
+A prompt template is employed to customize the behavior of the LLM specifically for the task at hand. By tailoring the prompts, the model can effectively generate responses relevant to the content extracted from the uploaded files.
+
+### File Upload and Session Management:
+At the beginning of the chatbot interaction, users are prompted to upload files. The Chainlit library's AskFileMessage feature is utilized to seamlessly collect files from users. These files are stored within the user session to optimize performance and streamline data handling.
+
+### Text Processing and Embedding:
+Upon receiving the uploaded file, the text content is extracted and processed. A text splitter instance partitions the text into manageable chunks. These chunks are then embedded using the HuggingFaceEmbedding model, chosen for its capability to handle large volumes of tokens efficiently.
+
+### Vector Database:
+The embedded data chunks are stored in the ChromaDb vector database. This database facilitates similarity search operations, enabling the retrieval of relevant answers based on user queries.
+
+### Answer Generation:
+When users pose questions to the chatbot, the model generates responses based on the contextual information derived from the uploaded files. The generated answers are promptly delivered to the users.
+
+### Deployment:
+The completed chatbot application is deployed on the Microsoft Azure cloud service. Docker is used for containerization, allowing for easy deployment and scalability. The application image is stored in the Azure Container Registry, and the chatbot is hosted using the Azure Web App service.
+
+## Tools & Libraries Used
+
+- Python: Programming language for backend development.
+- Chainlit: Library utilized for building the chatbot interface.
+- OpenAI LLM: Large language model employed for generating responses.
+- Docker: Containerization tool used for creating application images.
+- Microsoft Azure: Cloud service provider utilized for deployment.
+- Visual Studio Code: Integrated Development Environment (IDE) for code development.
+- Other libraries specified in the requirements.txt file.
 #### Google drive link for demo video
 https://drive.google.com/file/d/1XsrTr9qvdGDJ5t01I0dxEsOAH0vk0adx/view?usp=share_link
