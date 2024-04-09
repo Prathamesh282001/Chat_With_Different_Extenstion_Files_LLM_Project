@@ -1,5 +1,9 @@
 # ProtonDatalabs AI Developer Assignment Documentation
 
+
+https://github.com/Prathamesh282001/Chat_With_Different_Extenstion_Files_LLM_Project/assets/122107260/15e1139c-05a8-40ef-b8cf-5d95ae9c64d0
+
+
 ## Project Overview
 
 The ProtonDatalabs AI Developer Assignment involves building a chatbot application capable of answering user queries based on uploaded files in formats such as .txt, .pdf, and .docx. The primary objective is to provide accurate answers derived from the textual data within the uploaded files.
