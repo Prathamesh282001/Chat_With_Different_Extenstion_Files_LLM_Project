@@ -47,5 +47,3 @@ The completed chatbot application is deployed on the Microsoft Azure cloud servi
 - Microsoft Azure: Cloud service provider utilized for deployment.
 - Visual Studio Code: Integrated Development Environment (IDE) for code development.
 - Other libraries specified in the requirements.txt file.
-#### Google drive link for demo video
-https://drive.google.com/file/d/1XsrTr9qvdGDJ5t01I0dxEsOAH0vk0adx/view?usp=share_link
